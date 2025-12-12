@@ -1,0 +1,63 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+html,body{
+    height:100%
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+    font-family:sans-serif
+}
+
+.sudoku{
+  width:540px;
+  aspect-ratio:1/1;
+  display:grid;
+  grid-template-columns:repeat(9,1fr);
+}
+
+.cell{
+  aspect-ratio:1/1;
+  width:100%;
+  border:1px solid #000;
+  font-size:1.6rem;
+  text-align:center;
+  outline:none;
+}
+
+.cell:focus{background:#eee}
+
+
+.cell:nth-child(9n+1){
+    border-left:4px solid #000
+}
+.cell:nth-child(9n+4){
+    border-left:4px solid #000
+}
+.cell:nth-child(9n+7){
+    border-left:4px solid #000
+}
+.cell:nth-child(9n){
+    border-right:4px solid #000
+}
+
+/* horizontal thick borders */
+.cell:nth-child(-n+9){
+    border-top:4px solid #000
+}
+.cell:nth-child(n+28):nth-child(-n+36){
+    border-top:4px solid #000
+}
+.cell:nth-child(n+55):nth-child(-n+63)
+{border-top:4px solid #000
+}
+.cell:nth-child(n+73):nth-child(-n+81){
+    border-bottom:4px solid #000
+}
+
