@@ -1,6 +1,6 @@
 This is a Sudoku Math Puzzle game created using HTML and CSS
 
-Reference links:
+Reference links: <br>
 https://www.w3schools.com/css/css_grid.asp <br>
 https://www.w3schools.com/css/css3_box-sizing.asp <br>
 https://www.w3schools.com/css/css_border.asp <br>
